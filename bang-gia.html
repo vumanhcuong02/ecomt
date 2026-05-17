@@ -57,12 +57,6 @@
     .pulse { animation: pulse-ring 2s infinite; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
-    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .table-wrap table { min-width: 480px; }
-    @media (max-width: 640px) {
-      .table-wrap table { min-width: 420px; font-size: 12px; }
-      .table-wrap th, .table-wrap td { padding: 8px 10px !important; }
-    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -139,18 +133,18 @@
           <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Cước Phí</span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Giá Taxi Nội Thành Ninh Hòa</h2>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 table-wrap">
-          <div class="bg-green-600 text-white px-4 md:px-6 py-4"><h3 class="font-bold text-base md:text-lg flex items-center gap-2"><i class="fas fa-car"></i> Xe Taxi 4 Chỗ & 7 Chỗ</h3></div>
-          <table class="w-full text-xs md:text-sm">
-            <thead class="bg-gray-50"><tr><th class="px-3 md:px-6 py-3 md:py-4 text-left font-bold text-gray-700">Loại Cước</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Xe 4 Chỗ</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Xe 7 Chỗ</th></tr></thead>
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+          <div class="bg-green-600 text-white px-6 py-4"><h3 class="font-bold text-lg flex items-center gap-2"><i class="fas fa-car"></i> Xe Taxi 4 Chỗ & 7 Chỗ</h3></div>
+          <table class="w-full text-sm">
+            <thead class="bg-gray-50"><tr><th class="px-6 py-4 text-left font-bold text-gray-700">Loại Cước</th><th class="px-6 py-4 text-center font-bold text-gray-700">Xe 4 Chỗ</th><th class="px-6 py-4 text-center font-bold text-gray-700">Xe 7 Chỗ</th></tr></thead>
             <tbody class="divide-y divide-gray-100">
-              <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">📍 Giá mở cửa</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">15,000đ</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">20,000đ</td></tr>
-              <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">📏 Km 2 – 15</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">10,000đ/km</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">14,000đ/km</td></tr>
-              <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">📏 Km 16 – 30</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">8,500đ/km</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">12,000đ/km</td></tr>
-              <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">📏 Từ km 31</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">7,000đ/km</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">10,000đ/km</td></tr>
-              <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">⏱️ Phí chờ</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">20,000đ/30p</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">25,000đ/30p</td></tr>
-              <tr class="price-row transition-colors bg-green-50"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🌙 Phí đêm (22h-6h)</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">+30%</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">+30%</td></tr>
-              <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🎒 Hành lý ≥15kg</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">Miễn phí</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">Miễn phí</td></tr>
+              <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">📍 Giá mở cửa (km đầu tiên)</td><td class="px-6 py-4 text-center font-bold text-green-600">15,000đ</td><td class="px-6 py-4 text-center font-bold text-green-600">20,000đ</td></tr>
+              <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">📏 Từ km thứ 2 – 15</td><td class="px-6 py-4 text-center font-bold text-green-600">10,000đ/km</td><td class="px-6 py-4 text-center font-bold text-green-600">14,000đ/km</td></tr>
+              <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">📏 Từ km thứ 16 – 30</td><td class="px-6 py-4 text-center font-bold text-green-600">8,500đ/km</td><td class="px-6 py-4 text-center font-bold text-green-600">12,000đ/km</td></tr>
+              <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">📏 Từ km thứ 31 trở đi</td><td class="px-6 py-4 text-center font-bold text-green-600">7,000đ/km</td><td class="px-6 py-4 text-center font-bold text-green-600">10,000đ/km</td></tr>
+              <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">⏱️ Phí chờ (chờ tại điểm đón)</td><td class="px-6 py-4 text-center font-bold text-green-600">20,000đ/30p</td><td class="px-6 py-4 text-center font-bold text-green-600">25,000đ/30p</td></tr>
+              <tr class="price-row transition-colors bg-green-50"><td class="px-6 py-4 font-medium text-gray-900">🌙 Phí đêm (22:00 – 06:00)</td><td class="px-6 py-4 text-center font-bold text-green-600">+30%</td><td class="px-6 py-4 text-center font-bold text-green-600">+30%</td></tr>
+              <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🎒 Phí hành lý nặng (≥15kg)</td><td class="px-6 py-4 text-center font-bold text-green-600">Miễn phí</td><td class="px-6 py-4 text-center font-bold text-green-600">Miễn phí</td></tr>
             </tbody>
           </table>
         </div>
@@ -162,31 +156,31 @@
           <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Giá Taxi Sân Bay & Liên Tỉnh</h2>
         </div>
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 table-wrap">
-            <div class="bg-blue-600 text-white px-4 md:px-6 py-4"><h3 class="font-bold text-base md:text-lg flex items-center gap-2"><i class="fas fa-car"></i> Xe Taxi 4 Chỗ</h3></div>
-            <table class="w-full text-xs md:text-sm">
-              <thead class="bg-gray-50"><tr><th class="px-3 md:px-6 py-3 md:py-4 text-left font-bold text-gray-700">Tuyến Đường</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Giá Trọn Gói</th></tr></thead>
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-blue-600 text-white px-6 py-4"><h3 class="font-bold text-lg flex items-center gap-2"><i class="fas fa-car"></i> Xe Taxi 4 Chỗ</h3></div>
+            <table class="w-full text-sm">
+              <thead class="bg-gray-50"><tr><th class="px-6 py-4 text-left font-bold text-gray-700">Tuyến Đường</th><th class="px-6 py-4 text-center font-bold text-gray-700">Giá Trọn Gói</th></tr></thead>
               <tbody class="divide-y divide-gray-100">
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">✈️ Sân Bay Cam Ranh</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">650,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🏙️ Nha Trang</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">350,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🌊 Dốc Lết</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">250,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🏘️ Vạn Ninh</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">300,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🏖️ Phan Thiết</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">2,500,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🌲 Đà Lạt</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">1,400,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">✈️ Ninh Hòa → Sân Bay Cam Ranh</td><td class="px-6 py-4 text-center font-bold text-green-600">650,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🏙️ Ninh Hòa → Nha Trang</td><td class="px-6 py-4 text-center font-bold text-green-600">350,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🌊 Ninh Hòa → Dốc Lết</td><td class="px-6 py-4 text-center font-bold text-green-600">250,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🏘️ Ninh Hòa → Vạn Ninh</td><td class="px-6 py-4 text-center font-bold text-green-600">300,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🏖️ Ninh Hòa → Phan Thiết</td><td class="px-6 py-4 text-center font-bold text-green-600">2,500,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🌲 Ninh Hòa → Đà Lạt</td><td class="px-6 py-4 text-center font-bold text-green-600">1,400,000đ</td></tr>
               </tbody>
             </table>
           </div>
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 table-wrap">
-            <div class="bg-green-600 text-white px-4 md:px-6 py-4"><h3 class="font-bold text-base md:text-lg flex items-center gap-2"><i class="fas fa-shuttle-van"></i> Xe Taxi 7 Chỗ</h3></div>
-            <table class="w-full text-xs md:text-sm">
-              <thead class="bg-gray-50"><tr><th class="px-3 md:px-6 py-3 md:py-4 text-left font-bold text-gray-700">Tuyến Đường</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Giá Trọn Gói</th></tr></thead>
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-green-600 text-white px-6 py-4"><h3 class="font-bold text-lg flex items-center gap-2"><i class="fas fa-shuttle-van"></i> Xe Taxi 7 Chỗ</h3></div>
+            <table class="w-full text-sm">
+              <thead class="bg-gray-50"><tr><th class="px-6 py-4 text-left font-bold text-gray-700">Tuyến Đường</th><th class="px-6 py-4 text-center font-bold text-gray-700">Giá Trọn Gói</th></tr></thead>
               <tbody class="divide-y divide-gray-100">
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">✈️ Sân Bay Cam Ranh</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">750,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🏙️ Nha Trang</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">450,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🌊 Dốc Lết</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">350,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🏘️ Vạn Ninh</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">400,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🏖️ Phan Thiết</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">2,700,000đ</td></tr>
-                <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">🌲 Đà Lạt</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">1,600,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">✈️ Ninh Hòa → Sân Bay Cam Ranh</td><td class="px-6 py-4 text-center font-bold text-green-600">750,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🏙️ Ninh Hòa → Nha Trang</td><td class="px-6 py-4 text-center font-bold text-green-600">450,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🌊 Ninh Hòa → Dốc Lết</td><td class="px-6 py-4 text-center font-bold text-green-600">350,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🏘️ Ninh Hòa → Vạn Ninh</td><td class="px-6 py-4 text-center font-bold text-green-600">400,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🏖️ Ninh Hòa → Phan Thiết</td><td class="px-6 py-4 text-center font-bold text-green-600">2,700,000đ</td></tr>
+                <tr class="price-row transition-colors"><td class="px-6 py-4 font-medium text-gray-900">🌲 Ninh Hòa → Đà Lạt</td><td class="px-6 py-4 text-center font-bold text-green-600">1,600,000đ</td></tr>
               </tbody>
             </table>
           </div>
