@@ -57,6 +57,12 @@
     .pulse { animation: pulse-ring 2s infinite; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-wrap table { min-width: 480px; }
+    @media (max-width: 640px) {
+      .table-wrap table { min-width: 420px; font-size: 12px; }
+      .table-wrap th, .table-wrap td { padding: 8px 10px !important; }
+    }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -133,9 +139,9 @@
           <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Cước Phí</span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Giá Taxi Nội Thành Ninh Hòa</h2>
         </div>
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-x-auto">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 table-wrap">
           <div class="bg-green-600 text-white px-4 md:px-6 py-4"><h3 class="font-bold text-base md:text-lg flex items-center gap-2"><i class="fas fa-car"></i> Xe Taxi 4 Chỗ & 7 Chỗ</h3></div>
-          <table class="w-full text-xs md:text-sm min-w-[500px]">
+          <table class="w-full text-xs md:text-sm">
             <thead class="bg-gray-50"><tr><th class="px-3 md:px-6 py-3 md:py-4 text-left font-bold text-gray-700">Loại Cước</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Xe 4 Chỗ</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Xe 7 Chỗ</th></tr></thead>
             <tbody class="divide-y divide-gray-100">
               <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">📍 Giá mở cửa</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">15,000đ</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">20,000đ</td></tr>
@@ -156,9 +162,9 @@
           <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Giá Taxi Sân Bay & Liên Tỉnh</h2>
         </div>
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-x-auto">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 table-wrap">
             <div class="bg-blue-600 text-white px-4 md:px-6 py-4"><h3 class="font-bold text-base md:text-lg flex items-center gap-2"><i class="fas fa-car"></i> Xe Taxi 4 Chỗ</h3></div>
-            <table class="w-full text-xs md:text-sm min-w-[400px]">
+            <table class="w-full text-xs md:text-sm">
               <thead class="bg-gray-50"><tr><th class="px-3 md:px-6 py-3 md:py-4 text-left font-bold text-gray-700">Tuyến Đường</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Giá Trọn Gói</th></tr></thead>
               <tbody class="divide-y divide-gray-100">
                 <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">✈️ Sân Bay Cam Ranh</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">650,000đ</td></tr>
@@ -170,9 +176,9 @@
               </tbody>
             </table>
           </div>
-          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-x-auto">
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 table-wrap">
             <div class="bg-green-600 text-white px-4 md:px-6 py-4"><h3 class="font-bold text-base md:text-lg flex items-center gap-2"><i class="fas fa-shuttle-van"></i> Xe Taxi 7 Chỗ</h3></div>
-            <table class="w-full text-xs md:text-sm min-w-[400px]">
+            <table class="w-full text-xs md:text-sm">
               <thead class="bg-gray-50"><tr><th class="px-3 md:px-6 py-3 md:py-4 text-left font-bold text-gray-700">Tuyến Đường</th><th class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-gray-700">Giá Trọn Gói</th></tr></thead>
               <tbody class="divide-y divide-gray-100">
                 <tr class="price-row transition-colors"><td class="px-3 md:px-6 py-3 md:py-4 font-medium text-gray-900">✈️ Sân Bay Cam Ranh</td><td class="px-3 md:px-6 py-3 md:py-4 text-center font-bold text-green-600">750,000đ</td></tr>
