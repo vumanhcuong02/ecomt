@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Thuê Xe Tự Lái - Taxi ECO MT Ninh Hòa | Cho Thuê Xe 4 Chỗ, 7 Chỗ</title>
+  <meta name="description" content="Dịch vụ cho thuê xe tự lái tại Ninh Hòa, Khánh Hòa. Xe 4 chỗ và 7 chỗ đời mới, giá rẻ. Thuê xe Mazda, Nissan, Toyota, Suzuki. Hotline: 0888 843 887" />
+  <meta name="keywords" content="thuê xe tự lái ninh hòa, thuê xe 4 chỗ, thuê xe 7 chỗ, thuê xe Mazda, thuê xe Khánh Hòa, thuê xe Nha Trang, thuê xe giá rẻ" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://taxiecomt.vn/thue-xe/" />
+  <meta property="og:title" content="Thuê Xe Tự Lái - Taxi ECO MT Ninh Hòa | Cho Thuê Xe 4 Chỗ, 7 Chỗ" />
+  <meta property="og:description" content="Dịch vụ cho thuê xe tự lái tại Ninh Hòa, Khánh Hòa. Xe 4 chỗ và 7 chỗ đời mới, giá rẻ." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taxiecomt.vn/thue-xe.html" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/46/2015-2019_Mazda_Demio_S.jpg" />
+  <meta property="og:locale" content="vi_VN" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Thuê xe tự lái ECO MT Ninh Hòa",
+    "description": "Dịch vụ cho thuê xe tự lái tại Ninh Hòa, Khánh Hòa. Xe 4 chỗ và 7 chỗ đời mới, giá rẻ.",
+    "url": "https://taxiecomt.vn/thue-xe.html",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Taxi ECO MT",
+      "telephone": "+84888843887"
+    },
+    "areaServed": { "@type": "City", "name": "Ninh Hòa, Khánh Hòa" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Xe cho thuê",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "VinFast VF3" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nissan Almera" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mazda 2" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mazda 3" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mazda CX-5" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Toyota Rush" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mitsubishi Xpander" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Toyota Avanza" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Toyota Veloz" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "VinFast Limo Green" } }
+      ]
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .navbar { transition: all 0.3s ease; }
+    .navbar.scrolled { background: rgba(15,15,15,0.97) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .page-header { background: linear-gradient(135deg, #022c22 0%, #14532d 50%, #166534 100%); }
+    .car-card { transition: all 0.3s ease; }
+    .car-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .car-card:hover .car-img { transform: scale(1.05); }
+    .car-img { transition: transform 0.5s ease; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    #mobile-menu { transition: all 0.3s ease; max-height: 0; overflow: hidden; }
+    #mobile-menu.open { max-height: 500px; }
+    @keyframes pulse-ring { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(34,197,94,0); } 100% { transform: scale(0.95); } }
+    .pulse { animation: pulse-ring 2s infinite; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
+    .ev-badge { background: linear-gradient(135deg, #10b981, #059669); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-transparent" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-18 py-3">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 bg-green-600 rounded-full flex items-center justify-center shadow-lg"><i class="fas fa-taxi text-white text-lg"></i></div>
+          <div><div class="text-white font-bold text-xl leading-tight drop-shadow">Taxi ECO MT</div><div class="text-green-300 text-xs font-medium">Tiết Kiệm · Thân Thiện</div></div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Trang Chủ</a>
+          <a href="gioi-thieu.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Giới Thiệu</a>
+          <a href="dich-vu.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Dịch Vụ</a>
+          <a href="thue-xe.html" class="text-green-400 font-medium transition-colors text-sm">Thuê Xe</a>
+          <a href="tuyen-duong.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Tuyến Đường</a>
+          <a href="bang-gia.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Bảng Giá</a>
+          <a href="tin-tuc.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Tin Tức</a>
+          <a href="lien-he.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Liên Hệ</a>
+          <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg flex items-center gap-2 pulse"><i class="fas fa-phone"></i> 0888 843 887</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white text-2xl" onclick="toggleMenu()"><i class="fas fa-bars" id="menu-icon"></i></button>
+      </div>
+      <div id="mobile-menu" class="md:hidden bg-gray-900/95 rounded-2xl mb-2">
+        <div class="px-4 py-4 flex flex-col gap-3">
+          <a href="index.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🏠 Trang Chủ</a>
+          <a href="gioi-thieu.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">📋 Giới Thiệu</a>
+          <a href="dich-vu.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🚗 Dịch Vụ</a>
+          <a href="thue-xe.html" onclick="toggleMenu()" class="text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🚙 Thuê Xe</a>
+          <a href="tuyen-duong.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🗺️ Tuyến Đường</a>
+          <a href="bang-gia.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">💰 Bảng Giá</a>
+          <a href="tin-tuc.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">📰 Tin Tức</a>
+          <a href="lien-he.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 text-sm">📞 Liên Hệ</a>
+          <a href="tel:0888843887" class="bg-green-600 text-white px-4 py-3 rounded-xl font-bold text-center text-sm"><i class="fas fa-phone mr-2"></i>Gọi Ngay: 0888 843 887</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header pt-32 pb-20 text-center text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10"><div class="absolute top-10 left-10 w-40 h-40 border border-white rounded-full"></div><div class="absolute bottom-10 right-10 w-60 h-60 border border-white rounded-full"></div></div>
+    <div class="relative z-10 px-4 max-w-4xl mx-auto">
+      <span class="inline-flex items-center gap-2 bg-green-600/30 border border-green-500/50 text-green-300 px-4 py-1.5 rounded-full text-sm font-medium mb-5"><i class="fas fa-car"></i> Dịch Vụ Cho Thuê Xe</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">Thuê Xe Tự Lái ECO MT</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">Xe đời mới, giá hợp lý. Tự lái thoải mái khám phá Ninh Hòa và vùng lân cận</p>
+    </div>
+  </header>
+
+  <div class="bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="flex items-center gap-2 text-sm text-gray-500">
+        <a href="index.html" class="hover:text-green-500 transition-colors"><i class="fas fa-home"></i></a>
+        <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+        <a href="dich-vu.html" class="hover:text-green-500 transition-colors">Dịch Vụ</a>
+        <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+        <span class="text-green-500 font-medium">Thuê Xe Tự Lái</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <!-- Alert -->
+      <div class="mb-10 fade-in">
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5 flex items-start gap-4">
+          <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-info-circle text-green-600"></i></div>
+          <div>
+            <h4 class="font-bold text-green-800">Lưu ý quan trọng!</h4>
+            <p class="text-green-700 text-sm mt-1">Giới hạn <strong>250km/ngày</strong>. Vượt quá km giới hạn phụ thu <strong>2,000đ/km</strong>. Giá thuê đã bao gồm bảo hiểm. Gọi <a href="tel:0888843887" class="underline font-bold">0888 843 887</a> để đặt xe ngay!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Chỗ -->
+      <section class="mb-20 fade-in">
+        <div class="flex items-center justify-between mb-10">
+          <div>
+            <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Dịch Vụ Cho Thuê</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Xe 4 Chỗ Tự Lái</h2>
+          </div>
+          <div class="hidden md:flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-road"></i> 250km/ngày
+            <span class="mx-2">|</span>
+            <i class="fas fa-gas-pump"></i> Khách tự đổ xăng
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- VF3 -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Vin_fast_VF3_in_Hanoi.jpg" alt="VinFast VF3" class="w-full h-full object-cover car-img" />
+              <div class="ev-badge absolute top-3 left-3 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+                <i class="fas fa-bolt"></i> Miễn phí sạc
+              </div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">VinFast VF3</h3>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Std</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">550,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">4 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Điện</span>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs flex items-center gap-1"><i class="fas fa-bolt"></i> EV</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Miễn phí sạc pin</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Tiết kiệm nhiên liệu</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phù hợp đô thị</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Nissan Almera -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://images.pexels.com/photos/35760615/pexels-photo-35760615.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Nissan Almera" class="w-full h-full object-cover car-img" />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Nissan Almera</h3>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Std</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">650,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">4 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Tiết kiệm xăng</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Di chuyển thoải mái</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phù hợp gia đình nhỏ</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Mazda 2 -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/2015-2019_Mazda_Demio_S.jpg" alt="Mazda 2" class="w-full h-full object-cover car-img" />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Mazda 2</h3>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Std</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">650,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">4 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Thiết kế thể thao</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Lái êm, hiện đại</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phù hợp văn phòng</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Mazda 3 -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://images.pexels.com/photos/16021639/pexels-photo-16021639.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Mazda 3" class="w-full h-full object-cover car-img" />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Mazda 3</h3>
+                <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-medium">Nổi bật</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">750,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">4 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Thiết kế sang trọng</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Nội thất cao cấp</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Công nghệ hiện đại</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Mazda CX5 -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/2022_Mazda_CX-5_2.0_front.jpg" alt="Mazda CX-5" class="w-full h-full object-cover car-img" />
+              <div class="absolute top-3 left-3 bg-yellow-500 text-white px-3 py-1 rounded text-xs font-bold">SUV</div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Mazda CX-5</h3>
+                <span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs font-medium">Crossover</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">850,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">4 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+                <span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">SUV</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Ghế da cao cấp</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phù hợp địa hình</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Du lịch gia đình</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 Chỗ -->
+      <section class="mb-20 fade-in">
+        <div class="flex items-center justify-between mb-10">
+          <div>
+            <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Dịch Vụ Cho Thuê</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Xe 7 Chỗ Tự Lái</h2>
+          </div>
+          <div class="hidden md:flex items-center gap-2 text-sm text-gray-500">
+            <i class="fas fa-road"></i> 250km/ngày
+            <span class="mx-2">|</span>
+            <i class="fas fa-gas-pump"></i> Khách tự đổ xăng
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Rush -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/2021_Toyota_Rush_1.5_G_in_White%2C_front_right.jpg" alt="Toyota Rush" class="w-full h-full object-cover car-img" />
+              <div class="absolute top-3 left-3 bg-blue-500 text-white px-3 py-1 rounded text-xs font-bold">7 chỗ</div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Toyota Rush</h3>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Std</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">700,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">7 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Tiết kiệm chi phí</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Dễ lái, linh hoạt</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phù hợp gia đình</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Xpander -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/2024_Mitsubishi_Xpander_GLS_%28front%29%2C_Pakuwon_Mall%2C_West_Surabaya.jpg" alt="Mitsubishi Xpander" class="w-full h-full object-cover car-img" />
+              <div class="absolute top-3 left-3 bg-blue-500 text-white px-3 py-1 rounded text-xs font-bold">7 chỗ</div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Mitsubishi Xpander</h3>
+                <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-medium">MPV</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">800,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">7 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phổ biến nhất</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Khoang rộng rãi</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Tiết kiệm xăng</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Avanza -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/2022_Toyota_Avanza_1.5_G_Toyota_Safety_Sense_W101RE_%2820220403%29.jpg" alt="Toyota Avanza" class="w-full h-full object-cover car-img" />
+              <div class="absolute top-3 left-3 bg-blue-500 text-white px-3 py-1 rounded text-xs font-bold">7 chỗ</div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Toyota Avanza</h3>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Std</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">800,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">7 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Chắc chắn, bền bỉ</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Dễ bảo trì</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Phù hợp đoàn</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Veloz -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/2022_Toyota_Veloz_1.5_Toyota_Safety_Sense_%28Philippines%29_front_view.jpg" alt="Toyota Veloz" class="w-full h-full object-cover car-img" />
+              <div class="absolute top-3 left-3 bg-blue-500 text-white px-3 py-1 rounded text-xs font-bold">7 chỗ</div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Toyota Veloz</h3>
+                <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-medium">Mới</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">850,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">7 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Xăng</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Thiết kế hiện đại</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Nội thất cao cấp</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Công nghệ mới</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+
+          <!-- Limo Green -->
+          <div class="car-card bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100">
+            <div class="relative overflow-hidden h-52 bg-gray-100">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Limo Green - Xe điện 7 chỗ" class="w-full h-full object-cover car-img" />
+              <div class="ev-badge absolute top-3 left-3 text-white px-3 py-1 rounded text-xs font-bold flex items-center gap-1">
+                <i class="fas fa-bolt"></i> Miễn phí sạc
+              </div>
+              <div class="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded text-xs font-bold">7 chỗ</div>
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-lg font-bold text-gray-900">Limo Green</h3>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-medium">Std</span>
+              </div>
+              <div class="text-3xl font-extrabold text-green-600 mb-1">900,000đ</div>
+              <div class="text-gray-400 text-xs mb-4">/ngày</div>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">7 chỗ</span>
+                <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs">Số tự động</span>
+                <span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs flex items-center gap-1"><i class="fas fa-bolt"></i> EV</span>
+              </div>
+              <ul class="text-sm text-gray-500 space-y-1 mb-4">
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Miễn phí sạc pin</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>7 chỗ ngồi thoải mái</li>
+                <li><i class="fas fa-check text-green-500 mr-2"></i>Thân thiện môi trường</li>
+              </ul>
+              <a href="tel:0888843887" class="block w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center transition-colors">
+                <i class="fas fa-phone-alt mr-2"></i>Đặt Xe Ngay
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Điều kiện thuê -->
+      <section class="mb-16 fade-in">
+        <div class="text-center mb-10">
+          <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Quy Định</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Điều Kiện Thuê Xe</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2"><i class="fas fa-clipboard-list text-green-500"></i> Giấy Tờ Cần Thiết</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>CMND/CCCD</strong> hoặc Hộ chiếu còn hiệu lực</span></li>
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Bằng lái xe</strong> B1 hoặc B2 còn hạn</span></li>
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Cọc tiền</strong> từ 3,000,000đ - 10,000,000đ (tùy loại xe)</span></li>
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-check-circle text-green-500 mt-1"></i> <span><strong>Hợp đồng thuê xe</strong> có chữ ký 2 bên</span></li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2"><i class="fas fa-info-circle text-green-500"></i> Quy Định Sử Dụng</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-road text-green-500 mt-1"></i> <span><strong>Giới hạn 250km/ngày</strong>. Vượt quá phụ thu 2,000đ/km</span></li>
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-gas-pump text-green-500 mt-1"></i> <span><strong>Khách tự đổ xăng</strong>. Trả lại xe cùng mức xăng lúc nhận</span></li>
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-clock text-green-500 mt-1"></i> <span><strong>Thời gian thuê</strong> tính từ lúc nhận xe đến khi trả xe</span></li>
+              <li class="flex items-start gap-3 text-gray-600"><i class="fas fa-ban text-red-500 mt-1"></i> <span><strong>Không mang xe</strong> ra khỏi tỉnh Khánh Hòa khi chưa có sự đồng ý</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="bg-green-600 rounded-3xl p-10 md:p-16 text-center text-white fade-in">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Đặt Thuê Xe Ngay!</h2>
+        <p class="text-green-100 text-lg mb-8 max-w-xl mx-auto">Gọi hotline hoặc nhắn tin Facebook để được tư vấn và đặt xe nhanh nhất.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0888843887" class="bg-white text-green-600 px-10 py-5 rounded-full font-extrabold text-xl hover:bg-gray-100 transition-all shadow-2xl flex items-center justify-center gap-3 pulse">
+            <i class="fas fa-phone-alt"></i> 0888 843 887
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3">
+            <i class="fab fa-facebook-messenger"></i> Nhắn Facebook
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="bg-black text-gray-400 py-10 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center"><i class="fas fa-taxi text-white"></i></div>
+            <div><div class="text-white font-bold text-lg">Taxi ECO MT</div><div class="text-green-400 text-xs">Tiết Kiệm · Thân Thiện · 24/7</div></div>
+          </div>
+          <p class="text-sm leading-relaxed">Công ty TNHH Taxi ECO MT – Dịch vụ taxi & cho thuê xe tự lái tại Ninh Hòa, Khánh Hòa.</p>
+        </div>
+        <div>
+          <div class="text-white font-bold mb-4">Liên Kết Nhanh</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-green-400 transition-colors">Trang Chủ</a></li>
+            <li><a href="dich-vu.html" class="hover:text-green-400 transition-colors">Dịch Vụ</a></li>
+            <li><a href="thue-xe.html" class="hover:text-green-400 transition-colors">Thuê Xe Tự Lái</a></li>
+            <li><a href="bang-gia.html" class="hover:text-green-400 transition-colors">Bảng Giá</a></li>
+            <li><a href="lien-he.html" class="hover:text-green-400 transition-colors">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-white font-bold mb-4">Liên Hệ</div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400 w-4"></i><a href="tel:0888843887" class="hover:text-green-400 font-bold text-white">0888 843 887</a></li>
+            <li class="flex items-center gap-2"><i class="fas fa-envelope text-green-400 w-4"></i><a href="mailto:congtyecomt@gmail.com" class="hover:text-green-400">congtyecomt@gmail.com</a></li>
+            <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-green-400 w-4 mt-0.5"></i><span>2 Trần Hùng, Ninh Hòa, Khánh Hòa</span></li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
+            <a href="tel:0888843887" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"><i class="fas fa-phone text-white text-sm"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-600">© 2023 – 2026 Công ty TNHH Taxi ECO MT. Bảo lưu mọi quyền.</div>
+    </div>
+  </footer>
+
+  <a href="tel:0888843887" class="fixed bottom-6 right-6 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 pulse z-50"><i class="fas fa-phone text-xl"></i></a>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
+    function toggleMenu() { const menu = document.getElementById('mobile-menu'); const icon = document.getElementById('menu-icon'); menu.classList.toggle('open'); icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

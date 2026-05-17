@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Taxi ECO MT Ninh Hòa | Dịch Vụ Taxi Chính Hãng - Hotline: 0888 843 887</title>
+  <meta name="description" content="Taxi ECO MT Ninh Hòa - Dịch vụ taxi uy tín tại Ninh Hòa, Khánh Hòa. Xe 4 chỗ, 7 chỗ đời mới. Đưa đón sân bay Cam Ranh, Nha Trang, liên tỉnh. Hotline: 0888 843 887 - Phục vụ 24/7." />
+  <meta name="keywords" content="taxi ninh hòa, taxi eco mt, taxi khánh hòa, taxi sân bay cam ranh, taxi nha trang, đặt xe ninh hòa, taxi giá rẻ ninh hòa, eco mt" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Công ty TNHH Taxi ECO MT" />
+  <link rel="canonical" href="https://taxiecomt.vn/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Taxi ECO MT Ninh Hòa | Dịch Vụ Taxi Chính Hãng" />
+  <meta property="og:description" content="Taxi ECO MT - Dịch vụ taxi uy tín tại Ninh Hòa, Khánh Hòa. Phục vụ 24/7. Hotline: 0888 843 887" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taxiecomt.vn/" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <!-- Schema Markup: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Taxi ECO MT Ninh Hòa",
+    "description": "Dịch vụ taxi uy tín tại Ninh Hòa, Khánh Hòa. Xe 4 chỗ, 7 chỗ đời mới, phục vụ 24/7.",
+    "url": "https://taxiecomt.vn",
+    "telephone": "+84888843887",
+    "email": "congtyecomt@gmail.com",
+    "foundingDate": "2023",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Trần Hùng",
+      "addressLocality": "Ninh Hòa",
+      "addressRegion": "Khánh Hòa",
+      "addressCountry": "VN"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$",
+    "serviceType": "Taxi Service"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .navbar { transition: all 0.3s ease; }
+    .navbar.scrolled { background: rgba(15,15,15,0.97) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .hero-slider { position: relative; overflow: hidden; height: 100vh; min-height: 600px; }
+    .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; }
+    .slide.active { opacity: 1; }
+    .slide img { width: 100%; height: 100%; object-fit: cover; }
+    .slide-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(34,197,94,0.4) 100%); }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s; }
+    .dot.active { background: #22c55e; transform: scale(1.3); }
+    .service-card { transition: all 0.3s ease; }
+    .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    .route-badge { background: linear-gradient(135deg, #dcfce7, #bbf7d0); border-left: 4px solid #22c55e; }
+    .testimonial-card { background: linear-gradient(135deg, #fff, #f0fdf4); }
+    .map-wrapper { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+    .float-btn { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
+    .phone-btn { position: fixed; bottom: 90px; right: 24px; z-index: 999; }
+    @keyframes pulse-ring { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(34,197,94,0); } 100% { transform: scale(0.95); } }
+    .pulse { animation: pulse-ring 2s infinite; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    #mobile-menu { transition: all 0.3s ease; max-height: 0; overflow: hidden; }
+    #mobile-menu.open { max-height: 500px; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-transparent" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-18 py-3">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 bg-green-600 rounded-full flex items-center justify-center shadow-lg">
+            <i class="fas fa-taxi text-white text-lg"></i>
+          </div>
+          <div>
+            <div class="text-white font-bold text-xl leading-tight drop-shadow">Taxi ECO MT</div>
+            <div class="text-green-300 text-xs font-medium">Tiết Kiệm · Thân Thiện</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-white font-medium transition-colors text-sm">Trang Chủ</a>
+          <a href="gioi-thieu.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Giới Thiệu</a>
+          <a href="dich-vu.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Dịch Vụ</a>
+          <a href="thue-xe.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Thuê Xe</a>
+          <a href="tuyen-duong.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Tuyến Đường</a>
+          <a href="bang-gia.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Bảng Giá</a>
+          <a href="tin-tuc.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Tin Tức</a>
+          <a href="lien-he.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Liên Hệ</a>
+          <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg flex items-center gap-2 pulse">
+            <i class="fas fa-phone"></i> 0888 843 887
+          </a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white text-2xl" onclick="toggleMenu()">
+          <i class="fas fa-bars" id="menu-icon"></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden bg-gray-900/95 rounded-2xl mb-2">
+        <div class="px-4 py-4 flex flex-col gap-3">
+          <a href="index.html" onclick="toggleMenu()" class="text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🏠 Trang Chủ</a>
+          <a href="gioi-thieu.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">📋 Giới Thiệu</a>
+          <a href="dich-vu.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🚗 Dịch Vụ</a>
+          <a href="tuyen-duong.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🗺️ Tuyến Đường</a>
+          <a href="bang-gia.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">💰 Bảng Giá</a>
+          <a href="tin-tuc.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">📰 Tin Tức</a>
+          <a href="lien-he.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 text-sm">📞 Liên Hệ</a>
+          <a href="tel:0888843887" class="bg-green-600 text-white px-4 py-3 rounded-xl font-bold text-center text-sm">
+            <i class="fas fa-phone mr-2"></i>Gọi Ngay: 0888 843 887
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SLIDER -->
+  <section class="hero-slider" id="home" role="banner">
+    <div class="slide active">
+      <img src="https://images.pexels.com/photos/20316076/pexels-photo-20316076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT - Dịch vụ taxi tại Khánh Hòa" />
+      <div class="slide-overlay"></div>
+    </div>
+    <div class="slide">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Xe taxi 7 chỗ VinFast Limo Green ECO MT" />
+      <div class="slide-overlay"></div>
+    </div>
+    <div class="slide">
+      <img src="https://images.pexels.com/photos/14036282/pexels-photo-14036282.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT phục vụ toàn tỉnh Khánh Hòa" />
+      <div class="slide-overlay"></div>
+    </div>
+
+    <div class="absolute inset-0 flex items-center justify-center z-10">
+      <div class="text-center text-white px-4 max-w-4xl">
+        <div class="inline-flex items-center gap-2 bg-green-600/80 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+          Phục vụ 24/7 · Tiết kiệm chi phí
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+          Taxi ECO MT Ninh Hòa<br/>
+          <span class="text-green-400">Tiết Kiệm · Chất Lượng</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Dịch vụ taxi hàng đầu tại Ninh Hòa, Khánh Hòa. Xe 4 chỗ & 7 chỗ đời mới. Đưa đón sân bay, liên tỉnh – Giá cả minh bạch, an toàn tuyệt đối.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-2xl hover:shadow-green-500/40 flex items-center justify-center gap-3 pulse">
+            <i class="fas fa-phone-alt"></i> Gọi Ngay: 0888 843 887
+          </a>
+          <a href="dich-vu.html" class="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/40 px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3">
+            <i class="fas fa-car"></i> Xem Dịch Vụ
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-8 left-0 right-0 flex justify-center gap-3 z-10">
+      <div class="dot active" onclick="goToSlide(0)"></div>
+      <div class="dot" onclick="goToSlide(1)"></div>
+      <div class="dot" onclick="goToSlide(2)"></div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="bg-green-600 py-8 fade-in">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold" id="counter1">0</div>
+          <div class="text-green-200 text-sm mt-1 font-medium">Năm Kinh Nghiệm</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold" id="counter2">0</div>
+          <div class="text-green-200 text-sm mt-1 font-medium">Chuyến Xe/Ngày</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold" id="counter3">0</div>
+          <div class="text-green-200 text-sm mt-1 font-medium">Khách Hàng Tin Dùng</div>
+        </div>
+        <div>
+          <div class="text-3xl md:text-4xl font-extrabold">24/7</div>
+          <div class="text-green-200 text-sm mt-1 font-medium">Phục Vụ Liên Tục</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-14 items-center">
+        <div class="relative fade-in">
+          <img src="https://images.pexels.com/photos/5835054/pexels-photo-5835054.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800" alt="Taxi ECO MT - Dịch vụ đón khách chuyên nghiệp" class="rounded-2xl shadow-2xl w-full object-cover h-96 md:h-[480px]" />
+          <div class="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-leaf text-green-600 text-xl"></i>
+            </div>
+            <div>
+              <div class="font-bold text-gray-800 text-sm">ECO MT</div>
+              <div class="text-gray-500 text-xs">Thân thiện môi trường</div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-in">
+          <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Về Chúng Tôi</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-5 leading-tight">
+            Taxi ECO MT Ninh Hòa –<br/><span class="text-green-600">Tiết Kiệm & Chất Lượng</span>
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-4">
+            <strong>Taxi ECO MT</strong> là đơn vị vận tải taxi uy tín tại thị xã Ninh Hòa, tỉnh Khánh Hòa. Được thành lập năm <strong>2023</strong>, chúng tôi tự hào mang đến dịch vụ taxi chất lượng cao với mức giá hợp lý nhất.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Với đội ngũ tài xế được đào tạo bài bản, phương tiện đời mới và cam kết chất lượng dịch vụ, Taxi ECO MT luôn mang đến những chuyến đi <strong>an toàn, thoải mái và tiết kiệm</strong>.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+            <div class="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-green-600 text-xs"></i></div>
+              <span class="text-sm font-medium text-gray-700">Xe 4 chỗ & 7 chỗ đời mới</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-green-600 text-xs"></i></div>
+              <span class="text-sm font-medium text-gray-700">Tài xế thân thiện, chuyên nghiệp</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-green-600 text-xs"></i></div>
+              <span class="text-sm font-medium text-gray-700">Giá cước minh bạch, niêm yết</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-check text-green-600 text-xs"></i></div>
+              <span class="text-sm font-medium text-gray-700">Phục vụ 24/7 – Không nghỉ lễ</span>
+            </div>
+          </div>
+          <a href="tel:0888843887" class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-7 py-3.5 rounded-full font-bold transition-all shadow-lg hover:shadow-green-500/30">
+            <i class="fas fa-phone-alt"></i> Đặt Xe Ngay
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Dịch Vụ Của Chúng Tôi</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Dịch Vụ Taxi ECO MT</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Đa dạng dịch vụ, phục vụ mọi nhu cầu di chuyển của quý khách tại Ninh Hòa và toàn tỉnh Khánh Hòa</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <article class="service-card bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.pexels.com/photos/5835023/pexels-photo-5835023.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Dịch vụ taxi 4 chỗ ECO MT" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">Phổ biến nhất</div>
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-car text-green-600 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Taxi 4 Chỗ & 7 Chỗ</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">Đưa đón tại các tuyến nội địa thị xã Ninh Hòa. Xe đời mới, sạch sẽ, máy lạnh mát. Tài xế nhiệt tình, am hiểu đường phố.</p>
+            <a href="tel:0888843887" class="inline-flex items-center gap-2 text-green-600 font-semibold text-sm hover:text-green-700 transition-colors">Đặt xe ngay <i class="fas fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+        <article class="service-card bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://images.pexels.com/photos/31038748/pexels-photo-31038748.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Taxi sân bay Cam Ranh ECO MT" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-4 left-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold">Đặt trước</div>
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-plane-departure text-green-600 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Taxi Sân Bay & Liên Tỉnh</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">Chuyên đưa đón từ Ninh Hòa đi sân bay Cam Ranh, Nha Trang, Phan Thiết và các tỉnh thành lân cận.</p>
+            <a href="tel:0888843887" class="inline-flex items-center gap-2 text-green-600 font-semibold text-sm hover:text-green-700 transition-colors">Đặt xe ngay <i class="fas fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+        <article class="service-card bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden fade-in">
+          <div class="relative h-48 overflow-hidden">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Taxi giá rẻ ECO MT Ninh Hòa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">Tiết kiệm</div>
+          </div>
+          <div class="p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-tags text-green-600 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Taxi Giá Rẻ – Đường Dài</h3>
+            <p class="text-gray-500 text-sm leading-relaxed mb-4">Giá cước cạnh tranh nhất tại Ninh Hòa. Niêm yết giá rõ ràng, không phát sinh phí ẩn. Khuyến mãi cho khách đặt trước.</p>
+            <a href="tel:0888843887" class="inline-flex items-center gap-2 text-green-600 font-semibold text-sm hover:text-green-700 transition-colors">Đặt xe ngay <i class="fas fa-arrow-right text-xs"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROUTES -->
+  <section id="routes" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Tuyến Đường Phục Vụ</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Các Tuyến Xe Taxi ECO MT</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-5 fade-in">
+        <div class="route-badge p-5 rounded-xl flex items-center gap-4">
+          <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-plane text-white"></i></div>
+          <div>
+            <div class="font-bold text-gray-900">Ninh Hòa → Sân Bay Cam Ranh</div>
+            <div class="text-sm text-gray-600 mt-1">Đưa đón đúng giờ, theo dõi chuyến bay</div>
+          </div>
+          <a href="tel:0888843887" class="ml-auto bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold transition-colors flex-shrink-0">Đặt xe</a>
+        </div>
+        <div class="route-badge p-5 rounded-xl flex items-center gap-4">
+          <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-city text-white"></i></div>
+          <div>
+            <div class="font-bold text-gray-900">Ninh Hòa → Nha Trang</div>
+            <div class="text-sm text-gray-600 mt-1">Tuyến phổ biến, khởi hành liên tục</div>
+          </div>
+          <a href="tel:0888843887" class="ml-auto bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold transition-colors flex-shrink-0">Đặt xe</a>
+        </div>
+        <div class="route-badge p-5 rounded-xl flex items-center gap-4">
+          <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-water text-white"></i></div>
+          <div>
+            <div class="font-bold text-gray-900">Ninh Hòa → Dốc Lết</div>
+            <div class="text-sm text-gray-600 mt-1">Biển đẹp, đường đi thuận tiện</div>
+          </div>
+          <a href="tel:0888843887" class="ml-auto bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold transition-colors flex-shrink-0">Đặt xe</a>
+        </div>
+        <div class="route-badge p-5 rounded-xl flex items-center gap-4">
+          <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"><i class="fas fa-mountain text-white"></i></div>
+          <div>
+            <div class="font-bold text-gray-900">Ninh Hòa → Vạn Ninh</div>
+            <div class="text-sm text-gray-600 mt-1">Phục vụ tuyến Bắc Khánh Hòa</div>
+          </div>
+          <a href="tel:0888843887" class="ml-auto bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold transition-colors flex-shrink-0">Đặt xe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Khách Hàng Nói Gì</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 mb-4">Đánh Giá Từ Khách Hàng</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 fade-in">
+        <div class="testimonial-card p-6 rounded-2xl shadow-sm border border-green-50">
+          <div class="flex items-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">"Taxi ECO MT rất đúng giờ, tài xế nhiệt tình và thân thiện. Giá cả hợp lý hơn nhiều so với các hãng khác. Tôi sẽ tiếp tục ủng hộ!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"><i class="fas fa-user text-green-400"></i></div>
+            <div>
+              <div class="font-bold text-gray-800 text-sm">Phạm Thanh Hà</div>
+              <div class="text-gray-400 text-xs">Khách hàng tại Ninh Hòa</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card p-6 rounded-2xl shadow-sm border border-green-50">
+          <div class="flex items-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">"Dịch vụ taxi sân bay rất tốt, đón đúng giờ và giá cả rất hợp lý. Xe sạch sẽ và thoải mái. Highly recommended!"</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"><i class="fas fa-user text-green-400"></i></div>
+            <div>
+              <div class="font-bold text-gray-800 text-sm">Võ Minh Tuấn</div>
+              <div class="text-gray-400 text-xs">Khách hàng tại Khánh Hòa</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card p-6 rounded-2xl shadow-sm border border-green-50">
+          <div class="flex items-center gap-1 text-yellow-400 mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">"Tôi đi du lịch Nha Trang và dùng Taxi ECO MT để di chuyển. Rất tiện lợi, tài xế thân thiện và giá cả phải chăng."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"><i class="fas fa-user text-green-400"></i></div>
+            <div>
+              <div class="font-bold text-gray-800 text-sm">Nguyễn Thị Thu Trang</div>
+              <div class="text-gray-400 text-xs">Du khách từ TP.HCM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-14 fade-in">
+        <span class="text-green-400 font-semibold text-sm uppercase tracking-widest">Liên Hệ Chúng Tôi</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold mt-2 mb-4">Đặt Xe Taxi ECO MT</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="fade-in">
+          <div class="space-y-6">
+            <div class="flex items-start gap-4 p-5 bg-white/5 rounded-2xl border border-white/10 hover:border-green-500/50 transition-colors">
+              <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-phone text-white text-lg"></i></div>
+              <div>
+                <div class="text-gray-400 text-sm mb-1">Hotline 24/7</div>
+                <a href="tel:0888843887" class="text-2xl font-extrabold text-white hover:text-green-400 transition-colors">0888 843 887</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-white/5 rounded-2xl border border-white/10">
+              <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-map-marker-alt text-white text-lg"></i></div>
+              <div>
+                <div class="text-gray-400 text-sm mb-1">Địa Chỉ</div>
+                <div class="text-white font-semibold">2 Trần Hùng, Ninh Hòa</div>
+                <div class="text-gray-400 text-sm">Thị xã Ninh Hoà, Tỉnh Khánh Hòa</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-white/5 rounded-2xl border border-white/10">
+              <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fas fa-envelope text-white text-lg"></i></div>
+              <div>
+                <div class="text-gray-400 text-sm mb-1">Email</div>
+                <a href="mailto:congtyecomt@gmail.com" class="text-white font-semibold hover:text-green-400 transition-colors">congtyecomt@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-5 bg-white/5 rounded-2xl border border-white/10">
+              <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fab fa-facebook-f text-white text-lg"></i></div>
+              <div>
+                <div class="text-gray-400 text-sm mb-1">Facebook Fanpage</div>
+                <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="text-white font-semibold hover:text-blue-400 transition-colors">Taxi Ninh Hòa ECOMT</a>
+              </div>
+            </div>
+          </div>
+          <a href="tel:0888843887" class="mt-8 w-full flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl font-bold text-lg transition-all shadow-xl hover:shadow-green-500/30 pulse">
+            <i class="fas fa-phone-alt text-xl"></i> Gọi Ngay: 0888 843 887
+          </a>
+        </div>
+        <div class="fade-in">
+          <div class="map-wrapper h-80 md:h-[480px] bg-gray-700">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.245!2d109.134!3d12.5066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31703fdcf21ec3f1%3A0xd73943a2dd0a5db9!2zMiBUcuG6oW4gSHXhuqVnLCBOaW5oIEjhuq8sIEtodG5oIEjDoEEsIFZp4buHdCBOZ3V5!5e0!3m2!1svi!2svn!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Bản đồ Taxi ECO MT - 2 Trần Hùng, Ninh Hòa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mt-4 text-center">
+            <a href="https://www.google.com/maps/place/2+Tr%E1%BA%A7n+H%C3%B9ng,+Ninh+H%C3%B2a,+Kh%C3%A1nh+H%C3%B2a,+Vietnam/@12.5065822,109.1421847,1070m/data=!3m2!1e3!4b1!4m6!3m5!1s0x31703fdcf21ec3f1:0xd73943a2dd0a5db9!8m2!3d12.506577!4d109.1447596!16s%2Fg%2F11l75qsxnr?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors">
+              <i class="fas fa-external-link-alt"></i> Mở trong Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-400 py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center"><i class="fas fa-taxi text-white"></i></div>
+            <div>
+              <div class="text-white font-bold text-lg">Taxi ECO MT</div>
+              <div class="text-green-400 text-xs">Tiết Kiệm · Thân Thiện · 24/7</div>
+            </div>
+          </div>
+          <p class="text-sm leading-relaxed">Công ty TNHH Taxi ECO MT – Dịch vụ taxi uy tín tại Ninh Hòa, Khánh Hòa.</p>
+          <div class="mt-4 text-xs text-gray-600">MST: 4201977057 | Thành lập: 13/04/2023</div>
+        </div>
+        <div>
+          <div class="text-white font-bold mb-4">Liên Kết Nhanh</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-green-400 transition-colors">Trang Chủ</a></li>
+            <li><a href="gioi-thieu.html" class="hover:text-green-400 transition-colors">Giới Thiệu</a></li>
+            <li><a href="dich-vu.html" class="hover:text-green-400 transition-colors">Dịch Vụ</a></li>
+            <li><a href="tuyen-duong.html" class="hover:text-green-400 transition-colors">Tuyến Đường</a></li>
+            <li><a href="bang-gia.html" class="hover:text-green-400 transition-colors">Bảng Giá</a></li>
+            <li><a href="tin-tuc.html" class="hover:text-green-400 transition-colors">Tin Tức</a></li>
+            <li><a href="lien-he.html" class="hover:text-green-400 transition-colors">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-white font-bold mb-4">Liên Hệ</div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400 w-4"></i><a href="tel:0888843887" class="hover:text-green-400 font-bold text-white">0888 843 887</a></li>
+            <li class="flex items-center gap-2"><i class="fas fa-envelope text-green-400 w-4"></i><a href="mailto:congtyecomt@gmail.com" class="hover:text-green-400">congtyecomt@gmail.com</a></li>
+            <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-green-400 w-4 mt-0.5"></i><span>2 Trần Hùng, Ninh Hòa, Khánh Hòa</span></li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
+            <a href="tel:0888843887" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"><i class="fas fa-phone text-white text-sm"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-600">
+        © 2023 – 2026 Công ty TNHH Taxi ECO MT. Bảo lưu mọi quyền.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOAT BUTTONS -->
+  <a href="tel:0888843887" class="phone-btn w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 pulse" title="Gọi điện ngay">
+    <i class="fas fa-phone text-xl"></i>
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="float-btn w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110" title="Chat Facebook">
+    <i class="fab fa-facebook-messenger text-xl"></i>
+  </a>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+      menu.classList.toggle('open');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    }
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    function showSlide(index) { slides.forEach(s => s.classList.remove('active')); dots.forEach(d => d.classList.remove('active')); currentSlide = (index + slides.length) % slides.length; slides[currentSlide].classList.add('active'); dots[currentSlide].classList.add('active'); }
+    function goToSlide(index) { showSlide(index); }
+    setInterval(() => showSlide(currentSlide + 1), 5000);
+    function animateCounter(el, target, suffix = '') { let current = 0; const step = Math.ceil(target / 60); const timer = setInterval(() => { current = Math.min(current + step, target); el.textContent = current.toLocaleString('vi-VN') + suffix; if (current >= target) clearInterval(timer); }, 30); }
+    let countersStarted = false;
+    const statsSection = document.querySelector('.bg-green-600.py-8');
+    if (statsSection) { const statsObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting && !countersStarted) { countersStarted = true; animateCounter(document.getElementById('counter1'), 1, '+'); animateCounter(document.getElementById('counter2'), 100, '+'); animateCounter(document.getElementById('counter3'), 5000, '+'); } }); }, { threshold: 0.3 }); statsObserver.observe(statsSection); }
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

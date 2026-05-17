@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Tuyến Đường - Taxi ECO MT Ninh Hòa | Các Tuyến Xe Phổ Biến</title>
+  <meta name="description" content="Các tuyến xe taxi ECO MT: Ninh Hòa đi Nha Trang, Sân bay Cam Ranh, Phan Thiết, Dốc Lết, Vạn Ninh. Taxi giá rẻ, phục vụ 24/7." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Tuyến Đường - Taxi ECO MT Ninh Hòa | Các Tuyến Xe Phổ Biến" />
+  <meta property="og:description" content="Các tuyến xe taxi ECO MT: Ninh Hòa đi Nha Trang, Sân bay Cam Ranh, Phan Thiết, Dốc Lết, Vạn Ninh. Taxi giá rẻ, phục vụ 24/7." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taxiecomt.vn/tuyen-duong.html" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" />
+  <meta property="og:locale" content="vi_VN" />
+  <link rel="canonical" href="https://taxiecomt.vn/tuyen-duong/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Tuyến đường Taxi ECO MT",
+    "description": "Các tuyến xe taxi phổ biến: Ninh Hòa đi Nha Trang, Sân bay Cam Ranh, Dốc Lết, Vạn Ninh, Phan Thiết, Đà Lạt.",
+    "url": "https://taxiecomt.vn/tuyen-duong.html",
+    "provider": { "@type": "LocalBusiness", "name": "Taxi ECO MT", "telephone": "+84888843887" },
+    "areaServed": { "@type": "City", "name": "Ninh Hòa, Khánh Hòa" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tuyến đường taxi",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ninh Hòa → Sân Bay Cam Ranh (75km)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ninh Hòa → Nha Trang (36km)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ninh Hòa → Dốc Lết (15km)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ninh Hòa → Vạn Ninh (26km)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ninh Hòa → Phan Thiết (270km)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ninh Hòa → Đà Lạt" } }
+      ]
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { font-family: 'Be Vietnam Pro', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .navbar { transition: all 0.3s ease; }
+    .navbar.scrolled { background: rgba(15,15,15,0.97) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
+    .page-header { background: linear-gradient(135deg, #022c22 0%, #14532d 50%, #166534 100%); }
+    .route-card { transition: all 0.3s ease; }
+    .route-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    #mobile-menu { transition: all 0.3s ease; max-height: 0; overflow: hidden; }
+    #mobile-menu.open { max-height: 500px; }
+    @keyframes pulse-ring { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(34,197,94,0); } 100% { transform: scale(0.95); } }
+    .pulse { animation: pulse-ring 2s infinite; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-transparent" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-18 py-3">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-11 h-11 bg-green-600 rounded-full flex items-center justify-center shadow-lg"><i class="fas fa-taxi text-white text-lg"></i></div>
+          <div><div class="text-white font-bold text-xl leading-tight drop-shadow">Taxi ECO MT</div><div class="text-green-300 text-xs font-medium">Tiết Kiệm · Thân Thiện</div></div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Trang Chủ</a>
+          <a href="gioi-thieu.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Giới Thiệu</a>
+          <a href="dich-vu.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Dịch Vụ</a>
+          <a href="thue-xe.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Thuê Xe</a>
+          <a href="tuyen-duong.html" class="text-green-400 font-medium transition-colors text-sm">Tuyến Đường</a>
+          <a href="bang-gia.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Bảng Giá</a>
+          <a href="tin-tuc.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Tin Tức</a>
+          <a href="lien-he.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Liên Hệ</a>
+          <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg flex items-center gap-2 pulse"><i class="fas fa-phone"></i> 0888 843 887</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-white text-2xl" onclick="toggleMenu()"><i class="fas fa-bars" id="menu-icon"></i></button>
+      </div>
+      <div id="mobile-menu" class="md:hidden bg-gray-900/95 rounded-2xl mb-2">
+        <div class="px-4 py-4 flex flex-col gap-3">
+          <a href="index.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🏠 Trang Chủ</a>
+          <a href="gioi-thieu.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">📋 Giới Thiệu</a>
+          <a href="dich-vu.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🚗 Dịch Vụ</a>
+          <a href="tuyen-duong.html" onclick="toggleMenu()" class="text-green-400 font-medium py-2 border-b border-gray-700 text-sm">🗺️ Tuyến Đường</a>
+          <a href="bang-gia.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">💰 Bảng Giá</a>
+          <a href="tin-tuc.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 border-b border-gray-700 text-sm">📰 Tin Tức</a>
+          <a href="lien-he.html" onclick="toggleMenu()" class="text-white hover:text-green-400 font-medium py-2 text-sm">📞 Liên Hệ</a>
+          <a href="tel:0888843887" class="bg-green-600 text-white px-4 py-3 rounded-xl font-bold text-center text-sm"><i class="fas fa-phone mr-2"></i>Gọi Ngay: 0888 843 887</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header pt-32 pb-20 text-center text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10"><div class="absolute top-10 left-10 w-40 h-40 border border-white rounded-full"></div><div class="absolute bottom-10 right-10 w-60 h-60 border border-white rounded-full"></div></div>
+    <div class="relative z-10 px-4 max-w-4xl mx-auto">
+      <span class="inline-flex items-center gap-2 bg-green-600/30 border border-green-500/50 text-green-300 px-4 py-1.5 rounded-full text-sm font-medium mb-5"><i class="fas fa-route"></i> Tuyến Đường</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">Các Tuyến Xe Taxi ECO MT</h1>
+      <p class="text-gray-300 text-lg max-w-2xl mx-auto">Phục vụ nhiều tuyến đường trong và ngoài tỉnh Khánh Hòa với giá cả hợp lý nhất</p>
+    </div>
+  </header>
+
+  <div class="bg-gray-50 border-b">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <nav class="flex items-center gap-2 text-sm text-gray-500">
+        <a href="index.html" class="hover:text-green-500 transition-colors"><i class="fas fa-home"></i></a>
+        <i class="fas fa-chevron-right text-xs text-gray-400"></i>
+        <span class="text-green-500 font-medium">Tuyến Đường</span>
+      </nav>
+    </div>
+  </div>
+
+  <main class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <section class="mb-20 fade-in">
+        <div class="text-center mb-12">
+          <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">Phổ Biến Nhất</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Tuyến Đường Hot</h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="route-card bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"><i class="fas fa-plane-departure text-green-600 text-xl"></i></div>
+              <span class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs font-bold">Hot</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Ninh Hòa → Sân Bay Cam Ranh</h3>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3"><i class="fas fa-road"></i><span>Khoảng 75km</span><span class="mx-2">·</span><i class="fas fa-clock"></i><span>~1 giờ 40 phút</span></div>
+            <p class="text-gray-600 text-sm mb-4">Đưa đón tận nhà hoặc địa chỉ bạn chỉ định. Miễn phí chờ đợi 30 phút tại sân bay.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div><div class="text-xs text-gray-400">Giá từ</div><div class="text-xl font-extrabold text-green-600">650,000đ</div></div>
+              <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold transition-colors">Đặt xe</a>
+            </div>
+          </div>
+          <div class="route-card bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-city text-blue-600 text-xl"></i></div>
+              <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold">Phổ biến</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Ninh Hòa → Nha Trang City</h3>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3"><i class="fas fa-road"></i><span>Khoảng 36km</span><span class="mx-2">·</span><i class="fas fa-clock"></i><span>~50 phút</span></div>
+            <p class="text-gray-600 text-sm mb-4">Tuyến phổ biến nhất, khởi hành liên tục. Phục vụ đưa đón tại mọi địa điểm ở Nha Trang.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div><div class="text-xs text-gray-400">Giá từ</div><div class="text-xl font-extrabold text-green-600">350,000đ</div></div>
+              <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold transition-colors">Đặt xe</a>
+            </div>
+          </div>
+          <div class="route-card bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center"><i class="fas fa-water text-cyan-600 text-xl"></i></div>
+              <span class="bg-cyan-100 text-cyan-600 px-3 py-1 rounded-full text-xs font-bold">Nghỉ dưỡng</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Ninh Hòa → Dốc Lết Beach</h3>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3"><i class="fas fa-road"></i><span>Khoảng 15km</span><span class="mx-2">·</span><i class="fas fa-clock"></i><span>~25 phút</span></div>
+            <p class="text-gray-600 text-sm mb-4">Đến bãi biển Dốc Lết nổi tiếng. Khu nghỉ dưỡng biển đẹp, đường đi thuận tiện.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div><div class="text-xs text-gray-400">Giá từ</div><div class="text-xl font-extrabold text-green-600">250,000đ</div></div>
+              <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold transition-colors">Đặt xe</a>
+            </div>
+          </div>
+          <div class="route-card bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"><i class="fas fa-mountain text-green-600 text-xl"></i></div>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Ninh Hòa → Vạn Ninh</h3>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3"><i class="fas fa-road"></i><span>Khoảng 26km</span><span class="mx-2">·</span><i class="fas fa-clock"></i><span>~31 phút</span></div>
+            <p class="text-gray-600 text-sm mb-4">Tuyến Bắc Khánh Hòa, phục vụ khu vực Vạn Ninh và các vùng lân cận.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div><div class="text-xs text-gray-400">Giá từ</div><div class="text-xl font-extrabold text-green-600">300,000đ</div></div>
+              <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold transition-colors">Đặt xe</a>
+            </div>
+          </div>
+          <div class="route-card bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center"><i class="fas fa-sun text-yellow-600 text-xl"></i></div>
+              <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold">Đường dài</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Ninh Hòa → Phan Thiết</h3>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3"><i class="fas fa-road"></i><span>Khoảng 270km</span><span class="mx-2">·</span><i class="fas fa-clock"></i><span>~4 giờ</span></div>
+            <p class="text-gray-600 text-sm mb-4">Đến thành phố biển Phan Thiết, Bình Thuận. Du lịch, công tác hoặc thăm thân.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div><div class="text-xs text-gray-400">Giá từ</div><div class="text-xl font-extrabold text-green-600">2,500,000đ</div></div>
+              <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold transition-colors">Đặt xe</a>
+            </div>
+          </div>
+          <div class="route-card bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center"><i class="fas fa-map-marker-alt text-purple-600 text-xl"></i></div>
+              <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs font-bold">Nội địa</span>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Ninh Hòa Nội Thị</h3>
+            <div class="flex items-center gap-2 text-sm text-gray-500 mb-3"><i class="fas fa-road"></i><span>Mọi tuyến</span><span class="mx-2">·</span><i class="fas fa-clock"></i><span>Theo đồng hồ</span></div>
+            <p class="text-gray-600 text-sm mb-4">Đi lại trong thị xã Ninh Hòa: Trần Hùng, các phường xã lân cận.</p>
+            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+              <div><div class="text-xs text-gray-400">Giá mở cửa</div><div class="text-xl font-extrabold text-green-600">15,000đ</div></div>
+              <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-bold transition-colors">Gọi xe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-20 fade-in">
+        <div class="bg-gradient-to-r from-green-600 to-green-700 rounded-3xl p-8 md:p-12 text-white">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><i class="fas fa-map-marked-alt"></i> Các Tỉnh Thành Phục Vụ</h3>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="flex items-center gap-2"><i class="fas fa-check text-green-200"></i> Khánh Hòa</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check text-green-200"></i> Bình Thuận</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check text-green-200"></i> Lâm Đồng</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check text-green-200"></i> Ninh Thuận</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check text-green-200"></i> Phú Yên</div>
+                <div class="flex items-center gap-2"><i class="fas fa-check text-green-200"></i> TP. Hồ Chí Minh</div>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold mb-6 flex items-center gap-3"><i class="fas fa-phone-alt"></i> Đặt Xe Ngay</h3>
+              <p class="text-green-100 mb-6">Gọi tổng đài hoặc nhắn tin để được báo giá chính xác cho tuyến đường bạn cần di chuyển.</p>
+              <div class="space-y-3">
+                <a href="tel:0888843887" class="flex items-center gap-3 bg-white text-green-600 px-5 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors"><i class="fas fa-phone-alt"></i> 0888 843 887</a>
+                <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="flex items-center gap-3 bg-blue-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors"><i class="fab fa-facebook-messenger"></i> Nhắn tin Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-20 fade-in">
+        <div class="text-center mb-12">
+          <span class="text-green-600 font-semibold text-sm uppercase tracking-widest">3 Bước</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2">Cách Đặt Xe Taxi ECO MT</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5 text-3xl font-extrabold text-green-600">1</div>
+            <h4 class="font-bold text-gray-900 text-lg mb-2">Gọi Điện Hoặc Nhắn Tin</h4>
+            <p class="text-gray-500 text-sm">Gọi hotline <strong>0888 843 887</strong> hoặc nhắn tin qua Facebook, Zalo để đặt xe.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5 text-3xl font-extrabold text-green-600">2</div>
+            <h4 class="font-bold text-gray-900 text-lg mb-2">Cung Cấp Thông Tin</h4>
+            <p class="text-gray-500 text-sm">Cho chúng tôi biết địa điểm đón, điểm đến, số lượng khách và thời gian bạn cần.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5 text-3xl font-extrabold text-green-600">3</div>
+            <h4 class="font-bold text-gray-900 text-lg mb-2">Xe Có Mặt Đúng Giờ</h4>
+            <p class="text-gray-500 text-sm">Tài xế sẽ liên hệ và có mặt tại điểm đón đúng giờ. Bạn chỉ việc lên xe và đi!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-green-600 rounded-3xl p-10 md:p-16 text-center text-white fade-in">
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Gọi Đặt Xe Ngay!</h2>
+        <p class="text-green-100 text-lg mb-8 max-w-xl mx-auto">Phục vụ 24/7, có mặt trong vòng 10-15 phút tại Ninh Hòa.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:0888843887" class="bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-3 pulse"><i class="fas fa-phone-alt"></i> 0888 843 887</a>
+          <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3"><i class="fab fa-facebook-messenger"></i> Nhắn Facebook</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-black text-gray-400 py-10 mt-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center"><i class="fas fa-taxi text-white"></i></div>
+            <div><div class="text-white font-bold text-lg">Taxi ECO MT</div><div class="text-green-400 text-xs">Tiết Kiệm · Thân Thiện · 24/7</div></div>
+          </div>
+          <p class="text-sm leading-relaxed">Công ty TNHH Taxi ECO MT – Dịch vụ taxi uy tín tại Ninh Hòa, Khánh Hòa.</p>
+        </div>
+        <div>
+          <div class="text-white font-bold mb-4">Liên Kết Nhanh</div>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-green-400 transition-colors">Trang Chủ</a></li>
+            <li><a href="dich-vu.html" class="hover:text-green-400 transition-colors">Dịch Vụ</a></li>
+            <li><a href="bang-gia.html" class="hover:text-green-400 transition-colors">Bảng Giá</a></li>
+            <li><a href="lien-he.html" class="hover:text-green-400 transition-colors">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-white font-bold mb-4">Liên Hệ</div>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400 w-4"></i><a href="tel:0888843887" class="hover:text-green-400 font-bold text-white">0888 843 887</a></li>
+            <li class="flex items-center gap-2"><i class="fas fa-envelope text-green-400 w-4"></i><a href="mailto:congtyecomt@gmail.com" class="hover:text-green-400">congtyecomt@gmail.com</a></li>
+            <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-green-400 w-4 mt-0.5"></i><span>2 Trần Hùng, Ninh Hòa, Khánh Hòa</span></li>
+          </ul>
+          <div class="flex gap-3 mt-5">
+            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
+            <a href="tel:0888843887" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"><i class="fas fa-phone text-white text-sm"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-600">© 2023 – 2026 Công ty TNHH Taxi ECO MT. Bảo lưu mọi quyền.</div>
+    </div>
+  </footer>
+
+  <a href="tel:0888843887" class="fixed bottom-6 right-6 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 pulse z-50" title="Gọi điện ngay"><i class="fas fa-phone text-xl"></i></a>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
+    function toggleMenu() { const menu = document.getElementById('mobile-menu'); const icon = document.getElementById('menu-icon'); menu.classList.toggle('open'); icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
