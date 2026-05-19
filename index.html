@@ -17,6 +17,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://taxiecomt.vn/" />
   <meta property="og:locale" content="vi_VN" />
+  <meta property="og:image" content="https://images.pexels.com/photos/20316076/pexels-photo-20316076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Taxi ECO MT Ninh Hòa | Dịch Vụ Taxi Chính Hãng" />
+  <meta name="twitter:description" content="Taxi ECO MT - Dịch vụ taxi uy tín tại Ninh Hòa, Khánh Hòa. Phục vụ 24/7. Hotline: 0888 843 887" />
+  <meta name="theme-color" content="#16a34a" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
 
   <!-- Schema Markup: LocalBusiness -->
   <script type="application/ld+json">
@@ -49,12 +55,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="common.css" />
 
   <style>
-    * { font-family: 'Be Vietnam Pro', sans-serif; }
-    html { scroll-behavior: smooth; }
-    .navbar { transition: all 0.3s ease; }
-    .navbar.scrolled { background: rgba(15,15,15,0.97) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
     .hero-slider { position: relative; overflow: hidden; height: 100vh; min-height: 600px; }
     .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; }
     .slide.active { opacity: 1; }
@@ -69,17 +72,11 @@
     .map-wrapper { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
     .float-btn { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
     .phone-btn { position: fixed; bottom: 90px; right: 24px; z-index: 999; }
-    @keyframes pulse-ring { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(34,197,94,0); } 100% { transform: scale(0.95); } }
-    .pulse { animation: pulse-ring 2s infinite; }
-    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-    #mobile-menu { transition: all 0.3s ease; max-height: 0; overflow: hidden; }
-    #mobile-menu.open { max-height: 500px; }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
+
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
   <!-- NAVBAR -->
   <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-transparent" id="navbar">
@@ -107,7 +104,7 @@
             <i class="fas fa-phone"></i> 0888 843 887
           </a>
         </div>
-        <button id="menu-btn" class="md:hidden text-white text-2xl" onclick="toggleMenu()">
+        <button id="menu-btn" class="md:hidden text-white text-2xl" aria-label="Mở menu" onclick="toggleMenu()">
           <i class="fas fa-bars" id="menu-icon"></i>
         </button>
       </div>
@@ -129,7 +126,7 @@
   </nav>
 
   <!-- HERO SLIDER -->
-  <section class="hero-slider" id="home" role="banner">
+  <section class="hero-slider" id="main-content" role="banner">
     <div class="slide active">
       <img src="https://images.pexels.com/photos/20316076/pexels-photo-20316076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT - Dịch vụ taxi tại Khánh Hòa" />
       <div class="slide-overlay"></div>
@@ -203,7 +200,7 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-14 items-center">
         <div class="relative fade-in">
-          <img src="https://images.pexels.com/photos/5835054/pexels-photo-5835054.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800" alt="Taxi ECO MT - Dịch vụ đón khách chuyên nghiệp" class="rounded-2xl shadow-2xl w-full object-cover h-96 md:h-[480px]" />
+          <img src="https://images.pexels.com/photos/5835054/pexels-photo-5835054.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=600&w=800" alt="Taxi ECO MT - Dịch vụ đón khách chuyên nghiệp" class="rounded-2xl shadow-2xl w-full object-cover h-96 md:h-[480px]" width="800" height="600" loading="lazy" />
           <div class="absolute -bottom-5 -right-5 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
             <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
               <i class="fas fa-leaf text-green-600 text-xl"></i>
@@ -262,7 +259,7 @@
       <div class="grid md:grid-cols-3 gap-8">
         <article class="service-card bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/5835023/pexels-photo-5835023.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Dịch vụ taxi 4 chỗ ECO MT" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://images.pexels.com/photos/5835023/pexels-photo-5835023.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Dịch vụ taxi 4 chỗ ECO MT" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" width="600" height="400" loading="lazy" />
             <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold">Phổ biến nhất</div>
           </div>
           <div class="p-6">
@@ -276,7 +273,7 @@
         </article>
         <article class="service-card bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
-            <img src="https://images.pexels.com/photos/31038748/pexels-photo-31038748.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Taxi sân bay Cam Ranh ECO MT" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://images.pexels.com/photos/31038748/pexels-photo-31038748.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=600" alt="Taxi sân bay Cam Ranh ECO MT" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" width="600" height="400" loading="lazy" />
             <div class="absolute top-4 left-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold">Đặt trước</div>
           </div>
           <div class="p-6">
@@ -290,7 +287,7 @@
         </article>
         <article class="service-card bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden fade-in">
           <div class="relative h-48 overflow-hidden">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Taxi giá rẻ ECO MT Ninh Hòa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Taxi giá rẻ ECO MT Ninh Hòa" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" width="600" height="400" loading="lazy" />
             <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">Tiết kiệm</div>
           </div>
           <div class="p-6">
@@ -431,7 +428,7 @@
               <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0"><i class="fab fa-facebook-f text-white text-lg"></i></div>
               <div>
                 <div class="text-gray-400 text-sm mb-1">Facebook Fanpage</div>
-                <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="text-white font-semibold hover:text-blue-400 transition-colors">Taxi Ninh Hòa ECOMT</a>
+                <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" rel="noopener noreferrer" class="text-white font-semibold hover:text-blue-400 transition-colors">Taxi Ninh Hòa ECOMT</a>
               </div>
             </div>
           </div>
@@ -441,10 +438,10 @@
         </div>
         <div class="fade-in">
           <div class="map-wrapper h-80 md:h-[480px] bg-gray-700">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.245!2d109.134!3d12.5066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31703fdcf21ec3f1%3A0xd73943a2dd0a5db9!2zMiBUcuG6oW4gSHXhuqVnLCBOaW5oIEjhuq8sIEtodG5oIEjDoEEsIFZp4buHdCBOZ3V5!5e0!3m2!1svi!2svn!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Bản đồ Taxi ECO MT - 2 Trần Hùng, Ninh Hòa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.245!2d109.134!3d12.5066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31703fdcf21ec3f1%3A0xd73943a2dd0a5db9!2zMiBUcuG6oW4gSHXhuqVnLCBOaW5oIEjhuq8sIEtodG5oIEjDoEEsIFZp4buHdCBOZ3V5!5e0!3m2!1svi!2svn!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" sandbox="allow-scripts allow-same-origin" title="Bản đồ Taxi ECO MT - 2 Trần Hùng, Ninh Hòa" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="mt-4 text-center">
-            <a href="https://www.google.com/maps/place/2+Tr%E1%BA%A7n+H%C3%B9ng,+Ninh+H%C3%B2a,+Kh%C3%A1nh+H%C3%B2a,+Vietnam/@12.5065822,109.1421847,1070m/data=!3m2!1e3!4b1!4m6!3m5!1s0x31703fdcf21ec3f1:0xd73943a2dd0a5db9!8m2!3d12.506577!4d109.1447596!16s%2Fg%2F11l75qsxnr?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors">
+            <a href="https://www.google.com/maps/place/2+Tr%E1%BA%A7n+H%C3%B9ng,+Ninh+H%C3%B2a,+Kh%C3%A1nh+H%C3%B2a,+Vietnam/@12.5065822,109.1421847,1070m/data=!3m2!1e3!4b1!4m6!3m5!1s0x31703fdcf21ec3f1:0xd73943a2dd0a5db9!8m2!3d12.506577!4d109.1447596!16s%2Fg%2F11l75qsxnr?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm transition-colors">
               <i class="fas fa-external-link-alt"></i> Mở trong Google Maps
             </a>
           </div>
@@ -488,7 +485,7 @@
             <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-green-400 w-4 mt-0.5"></i><span>2 Trần Hùng, Ninh Hòa, Khánh Hòa</span></li>
           </ul>
           <div class="flex gap-3 mt-5">
-            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
             <a href="tel:0888843887" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"><i class="fas fa-phone text-white text-sm"></i></a>
           </div>
         </div>
@@ -503,20 +500,12 @@
   <a href="tel:0888843887" class="phone-btn w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 pulse" title="Gọi điện ngay">
     <i class="fas fa-phone text-xl"></i>
   </a>
-  <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="float-btn w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110" title="Chat Facebook">
+  <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" rel="noopener noreferrer" class="float-btn w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110" title="Chat Facebook">
     <i class="fab fa-facebook-messenger text-xl"></i>
   </a>
 
+  <script src="common.js"></script>
   <script>
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      const icon = document.getElementById('menu-icon');
-      menu.classList.toggle('open');
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-times');
-    }
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
@@ -527,8 +516,6 @@
     let countersStarted = false;
     const statsSection = document.querySelector('.bg-green-600.py-8');
     if (statsSection) { const statsObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting && !countersStarted) { countersStarted = true; animateCounter(document.getElementById('counter1'), 1, '+'); animateCounter(document.getElementById('counter2'), 100, '+'); animateCounter(document.getElementById('counter3'), 5000, '+'); } }); }, { threshold: 0.3 }); statsObserver.observe(statsSection); }
-    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
