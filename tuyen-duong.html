@@ -37,6 +37,12 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Trang Chủ","item":"https://taxiecomt.vn/"},
+    {"@type":"ListItem","position":2,"name":"Tuyến Đường","item":"https://taxiecomt.vn/tuyen-duong.html"}
+  ]}
+  </script>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,25 +50,15 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="common.css" />
   <style>
-    * { font-family: 'Be Vietnam Pro', sans-serif; }
-    html { scroll-behavior: smooth; }
-    .navbar { transition: all 0.3s ease; }
-    .navbar.scrolled { background: rgba(15,15,15,0.97) !important; box-shadow: 0 2px 20px rgba(0,0,0,0.3); }
-    .page-header { background: linear-gradient(135deg, #022c22 0%, #14532d 50%, #166534 100%); }
     .route-card { transition: all 0.3s ease; }
     .route-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.12); }
-    .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-    #mobile-menu { transition: all 0.3s ease; max-height: 0; overflow: hidden; }
-    #mobile-menu.open { max-height: 500px; }
-    @keyframes pulse-ring { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34,197,94,0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(34,197,94,0); } 100% { transform: scale(0.95); } }
-    .pulse { animation: pulse-ring 2s infinite; }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 3px; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
+
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
 
   <nav class="navbar fixed top-0 left-0 right-0 z-50 bg-transparent" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
@@ -82,7 +78,7 @@
           <a href="lien-he.html" class="text-white hover:text-green-400 font-medium transition-colors text-sm">Liên Hệ</a>
           <a href="tel:0888843887" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg flex items-center gap-2 pulse"><i class="fas fa-phone"></i> 0888 843 887</a>
         </div>
-        <button id="menu-btn" class="md:hidden text-white text-2xl" onclick="toggleMenu()"><i class="fas fa-bars" id="menu-icon"></i></button>
+        <button id="menu-btn" class="md:hidden text-white text-2xl" aria-label="Mở menu" onclick="toggleMenu()"><i class="fas fa-bars" id="menu-icon"></i></button>
       </div>
       <div id="mobile-menu" class="md:hidden bg-gray-900/95 rounded-2xl mb-2">
         <div class="px-4 py-4 flex flex-col gap-3">
@@ -118,7 +114,7 @@
     </div>
   </div>
 
-  <main class="py-16">
+  <main id="main-content" class="py-16">
     <div class="max-w-7xl mx-auto px-4">
 
       <section class="mb-20 fade-in">
@@ -226,7 +222,7 @@
               <p class="text-green-100 mb-6">Gọi tổng đài hoặc nhắn tin để được báo giá chính xác cho tuyến đường bạn cần di chuyển.</p>
               <div class="space-y-3">
                 <a href="tel:0888843887" class="flex items-center gap-3 bg-white text-green-600 px-5 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors"><i class="fas fa-phone-alt"></i> 0888 843 887</a>
-                <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="flex items-center gap-3 bg-blue-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors"><i class="fab fa-facebook-messenger"></i> Nhắn tin Facebook</a>
+                <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-blue-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors"><i class="fab fa-facebook-messenger"></i> Nhắn tin Facebook</a>
               </div>
             </div>
           </div>
@@ -262,7 +258,7 @@
         <p class="text-green-100 text-lg mb-8 max-w-xl mx-auto">Phục vụ 24/7, có mặt trong vòng 10-15 phút tại Ninh Hòa.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:0888843887" class="bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-xl flex items-center justify-center gap-3 pulse"><i class="fas fa-phone-alt"></i> 0888 843 887</a>
-          <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3"><i class="fab fa-facebook-messenger"></i> Nhắn Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-3"><i class="fab fa-facebook-messenger"></i> Nhắn Facebook</a>
         </div>
       </section>
     </div>
@@ -295,7 +291,7 @@
             <li class="flex items-start gap-2"><i class="fas fa-map-marker-alt text-green-400 w-4 mt-0.5"></i><span>2 Trần Hùng, Ninh Hòa, Khánh Hòa</span></li>
           </ul>
           <div class="flex gap-3 mt-5">
-            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100064131156575" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"><i class="fab fa-facebook-f text-white text-sm"></i></a>
             <a href="tel:0888843887" class="w-9 h-9 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"><i class="fas fa-phone text-white text-sm"></i></a>
           </div>
         </div>
@@ -306,12 +302,6 @@
 
   <a href="tel:0888843887" class="fixed bottom-6 right-6 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 pulse z-50" title="Gọi điện ngay"><i class="fas fa-phone text-xl"></i></a>
 
-  <script>
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
-    function toggleMenu() { const menu = document.getElementById('mobile-menu'); const icon = document.getElementById('menu-icon'); menu.classList.toggle('open'); icon.classList.toggle('fa-bars'); icon.classList.toggle('fa-times'); }
-    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+  <script src="common.js"></script>
 </body>
 </html>
