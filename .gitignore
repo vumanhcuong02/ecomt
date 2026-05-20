@@ -1,4 +1,10 @@
-# Build tools (not used)
+# Dependencies
+node_modules/
+
+# Generated files
+style.css
+
+# Build tools (legacy)
 tailwindcss.exe
 tailwindcss
 

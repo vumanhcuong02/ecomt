@@ -1,0 +1,13 @@
+{
+  "name": "ecomtsite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Taxi ECO MT Ninh Hòa - Website",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i src/input.css -o style.css --minify",
+    "dev": "npx @tailwindcss/cli -i src/input.css -o style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4"
+  }
+}
