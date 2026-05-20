@@ -1,0 +1,14 @@
+# Build tools (not used)
+tailwindcss.exe
+tailwindcss
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

@@ -57,22 +57,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="common.css" />
 
-  <style>
-    .hero-slider { position: relative; overflow: hidden; height: 100vh; min-height: 600px; }
-    .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; }
-    .slide.active { opacity: 1; }
-    .slide img { width: 100%; height: 100%; object-fit: cover; }
-    .slide-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(0,0,0,0.65) 0%, rgba(34,197,94,0.4) 100%); }
-    .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s; }
-    .dot.active { background: #22c55e; transform: scale(1.3); }
-    .service-card { transition: all 0.3s ease; }
-    .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-    .route-badge { background: linear-gradient(135deg, #dcfce7, #bbf7d0); border-left: 4px solid #22c55e; }
-    .testimonial-card { background: linear-gradient(135deg, #fff, #f0fdf4); }
-    .map-wrapper { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-    .float-btn { position: fixed; bottom: 24px; right: 24px; z-index: 999; }
-    .phone-btn { position: fixed; bottom: 90px; right: 24px; z-index: 999; }
-  </style>
 </head>
 <body class="bg-white text-gray-800">
 
@@ -126,17 +110,17 @@
   </nav>
 
   <!-- HERO SLIDER -->
-  <section class="hero-slider" id="main-content" role="banner">
-    <div class="slide active">
-      <img src="https://images.pexels.com/photos/20316076/pexels-photo-20316076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT - Dịch vụ taxi tại Khánh Hòa" />
+  <section class="hero-slider" id="main-content" role="region" aria-label="Trình chiếu ảnh chính" aria-roledescription="carousel">
+    <div class="slide active" role="group" aria-roledescription="slide" aria-label="Slide 1 trên 3">
+      <img src="https://images.pexels.com/photos/20316076/pexels-photo-20316076.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT - Dịch vụ taxi tại Khánh Hòa" fetchpriority="high" />
       <div class="slide-overlay"></div>
     </div>
-    <div class="slide">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Xe taxi 7 chỗ VinFast Limo Green ECO MT" />
+    <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2 trên 3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/VinFast_Limo_Green_silver.jpg" alt="Xe taxi 7 chỗ VinFast Limo Green ECO MT" loading="lazy" />
       <div class="slide-overlay"></div>
     </div>
-    <div class="slide">
-      <img src="https://images.pexels.com/photos/14036282/pexels-photo-14036282.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT phục vụ toàn tỉnh Khánh Hòa" />
+    <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3 trên 3">
+      <img src="https://images.pexels.com/photos/14036282/pexels-photo-14036282.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Taxi ECO MT phục vụ toàn tỉnh Khánh Hòa" loading="lazy" />
       <div class="slide-overlay"></div>
     </div>
 
@@ -164,10 +148,10 @@
       </div>
     </div>
 
-    <div class="absolute bottom-8 left-0 right-0 flex justify-center gap-3 z-10">
-      <div class="dot active" onclick="goToSlide(0)"></div>
-      <div class="dot" onclick="goToSlide(1)"></div>
-      <div class="dot" onclick="goToSlide(2)"></div>
+    <div class="absolute bottom-8 left-0 right-0 flex justify-center gap-3 z-10" role="tablist" aria-label="Chọn slide">
+      <div class="dot active" onclick="goToSlide(0)" role="tab" aria-selected="true" aria-label="Slide 1" tabindex="0"></div>
+      <div class="dot" onclick="goToSlide(1)" role="tab" aria-selected="false" aria-label="Slide 2" tabindex="-1"></div>
+      <div class="dot" onclick="goToSlide(2)" role="tab" aria-selected="false" aria-label="Slide 3" tabindex="-1"></div>
     </div>
   </section>
 
@@ -176,15 +160,15 @@
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold" id="counter1">0</div>
+          <div class="text-3xl md:text-4xl font-extrabold"><span id="counter1">3</span>+</div>
           <div class="text-green-200 text-sm mt-1 font-medium">Năm Kinh Nghiệm</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold" id="counter2">0</div>
+          <div class="text-3xl md:text-4xl font-extrabold"><span id="counter2">100</span>+</div>
           <div class="text-green-200 text-sm mt-1 font-medium">Chuyến Xe/Ngày</div>
         </div>
         <div>
-          <div class="text-3xl md:text-4xl font-extrabold" id="counter3">0</div>
+          <div class="text-3xl md:text-4xl font-extrabold"><span id="counter3">5,000</span>+</div>
           <div class="text-green-200 text-sm mt-1 font-medium">Khách Hàng Tin Dùng</div>
         </div>
         <div>
@@ -509,13 +493,13 @@
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
-    function showSlide(index) { slides.forEach(s => s.classList.remove('active')); dots.forEach(d => d.classList.remove('active')); currentSlide = (index + slides.length) % slides.length; slides[currentSlide].classList.add('active'); dots[currentSlide].classList.add('active'); }
+    function showSlide(index) { slides.forEach(s => { s.classList.remove('active'); s.setAttribute('aria-hidden', 'true'); }); dots.forEach((d, i) => { d.classList.remove('active'); d.setAttribute('aria-selected', 'false'); d.setAttribute('tabindex', '-1'); }); currentSlide = (index + slides.length) % slides.length; slides[currentSlide].classList.add('active'); slides[currentSlide].setAttribute('aria-hidden', 'false'); dots[currentSlide].classList.add('active'); dots[currentSlide].setAttribute('aria-selected', 'true'); dots[currentSlide].setAttribute('tabindex', '0'); }
     function goToSlide(index) { showSlide(index); }
     setInterval(() => showSlide(currentSlide + 1), 5000);
-    function animateCounter(el, target, suffix = '') { let current = 0; const step = Math.ceil(target / 60); const timer = setInterval(() => { current = Math.min(current + step, target); el.textContent = current.toLocaleString('vi-VN') + suffix; if (current >= target) clearInterval(timer); }, 30); }
+    function animateCounter(el, target) { el.textContent = '0'; let current = 0; const step = Math.ceil(target / 60); const timer = setInterval(() => { current = Math.min(current + step, target); el.textContent = current.toLocaleString('vi-VN'); if (current >= target) clearInterval(timer); }, 30); }
     let countersStarted = false;
     const statsSection = document.querySelector('.bg-green-600.py-8');
-    if (statsSection) { const statsObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting && !countersStarted) { countersStarted = true; animateCounter(document.getElementById('counter1'), 1, '+'); animateCounter(document.getElementById('counter2'), 100, '+'); animateCounter(document.getElementById('counter3'), 5000, '+'); } }); }, { threshold: 0.3 }); statsObserver.observe(statsSection); }
+    if (statsSection) { const statsObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting && !countersStarted) { countersStarted = true; animateCounter(document.getElementById('counter1'), 3); animateCounter(document.getElementById('counter2'), 100); animateCounter(document.getElementById('counter3'), 5000); } }); }, { threshold: 0.3 }); statsObserver.observe(statsSection); }
   </script>
 </body>
 </html>

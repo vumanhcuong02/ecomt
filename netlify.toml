@@ -1,0 +1,95 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/gioi-thieu"
+  to = "/gioi-thieu.html"
+  status = 200
+
+[[redirects]]
+  from = "/dich-vu"
+  to = "/dich-vu.html"
+  status = 200
+
+[[redirects]]
+  from = "/thue-xe"
+  to = "/thue-xe.html"
+  status = 200
+
+[[redirects]]
+  from = "/tuyen-duong"
+  to = "/tuyen-duong.html"
+  status = 200
+
+[[redirects]]
+  from = "/bang-gia"
+  to = "/bang-gia.html"
+  status = 200
+
+[[redirects]]
+  from = "/tin-tuc"
+  to = "/tin-tuc.html"
+  status = 200
+
+[[redirects]]
+  from = "/lien-he"
+  to = "/lien-he.html"
+  status = 200
+
+[[redirects]]
+  from = "/bai-viet-kham-pha-ninh-hoa"
+  to = "/bai-viet-kham-pha-ninh-hoa.html"
+  status = 200
+
+[[redirects]]
+  from = "/bai-viet-san-bay-cam-ranh"
+  to = "/bai-viet-san-bay-cam-ranh.html"
+  status = 200
+
+[[redirects]]
+  from = "/bai-viet-bai-bien-dep"
+  to = "/bai-viet-bai-bien-dep.html"
+  status = 200
+
+[[redirects]]
+  from = "/bai-viet-meo-dat-taxi"
+  to = "/bai-viet-meo-dat-taxi.html"
+  status = 200
+
+[[redirects]]
+  from = "/bai-viet-di-da-lat"
+  to = "/bai-viet-di-da-lat.html"
+  status = 200
+
+[[redirects]]
+  from = "/bai-viet-an-ngon-ninh-hoa"
+  to = "/bai-viet-an-ngon-ninh-hoa.html"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
