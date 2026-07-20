@@ -18,3 +18,7 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Local backups (HTML edit snapshots) — never commit
+.backup-*/
+_*.js

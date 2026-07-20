@@ -1,5 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Green circle background -->
   <circle cx="32" cy="32" r="30" fill="#16a34a"/>
-  <text x="32" y="44" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="bold" fill="white">T</text>
-  <rect x="20" y="14" width="24" height="4" rx="2" fill="#fbbf24"/>
+
+  <!-- "ECO" text -->
+  <text x="32" y="40" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="white">ECO</text>
+
+  <!-- Small car/taxi silhouette -->
+  <g transform="translate(16, 44) scale(0.6)">
+    <rect x="4" y="8" width="36" height="14" rx="4" fill="white"/>
+    <rect x="12" y="2" width="20" height="10" rx="3" fill="white"/>
+    <circle cx="14" cy="24" r="4" fill="#16a34a"/>
+    <circle cx="30" cy="24" r="4" fill="#16a34a"/>
+    <circle cx="14" cy="24" r="2" fill="white"/>
+    <circle cx="30" cy="24" r="2" fill="white"/>
+  </g>
+
+  <!-- Taxi roof light -->
+  <rect x="24" y="1" width="16" height="6" rx="3" fill="#fbbf24"/>
+  <text x="32" y="5.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="4" font-weight="bold" fill="#16a34a">TAXI</text>
 </svg>

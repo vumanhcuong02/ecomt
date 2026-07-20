@@ -2,6 +2,20 @@
   command = "npm run build"
   publish = "."
 
+# Force HTTPS
+[[redirects]]
+  from = "http://congtyecomt.com/*"
+  to = "https://congtyecomt.com/:splat"
+  status = 301
+  force = true
+
+# Additional HTTPS redirect for www subdomain if needed
+[[redirects]]
+  from = "http://www.congtyecomt.com/*"
+  to = "https://congtyecomt.com/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -9,6 +23,9 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https://congtyecomt.com https://formsubmit.co; frame-src https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    X-XSS-Protection = "1; mode=block"
 
 [[headers]]
   for = "*.css"
@@ -25,6 +42,51 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+  for = "*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+  for = "*.gif"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+  for = "*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.ttf"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.eot"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 [[redirects]]
   from = "/gioi-thieu"
   to = "/gioi-thieu.html"
@@ -38,11 +100,6 @@
 [[redirects]]
   from = "/thue-xe"
   to = "/thue-xe.html"
-  status = 200
-
-[[redirects]]
-  from = "/tuyen-duong"
-  to = "/tuyen-duong.html"
   status = 200
 
 [[redirects]]
@@ -66,18 +123,8 @@
   status = 200
 
 [[redirects]]
-  from = "/bai-viet-san-bay-cam-ranh"
-  to = "/bai-viet-san-bay-cam-ranh.html"
-  status = 200
-
-[[redirects]]
   from = "/bai-viet-bai-bien-dep"
   to = "/bai-viet-bai-bien-dep.html"
-  status = 200
-
-[[redirects]]
-  from = "/bai-viet-meo-dat-taxi"
-  to = "/bai-viet-meo-dat-taxi.html"
   status = 200
 
 [[redirects]]
