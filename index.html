@@ -22,6 +22,13 @@
   <link rel="dns-prefetch" href="//images.pexels.com"><link rel="stylesheet" href="style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" href="assets/fontawesome/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="assets/fontawesome/css/all.min.css" rel="stylesheet"></noscript>
+  <link rel="manifest" href="manifest.json">
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .catch(function(err) { console.log('SW registration failed:', err); });
+  }
+  </script>
   <link rel="stylesheet" href="common.css">
   <style>*{font-family:'Be Vietnam Pro',sans-serif}html{scroll-behavior:smooth}body{margin:0}.navbar{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .3s ease}.navbar.scrolled{background:rgba(15,15,15,.97)!important;box-shadow:0 2px 20px rgba(0,0,0,.3)}.hero-slider{position:relative;overflow:hidden;height:100vh;min-height:600px}.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease}.slide.active{opacity:1}.slide img{width:100%;height:100%;object-fit:cover}.slide-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.65),rgba(34,197,94,.4))}.skip-link{position:absolute;top:-100%;left:16px;z-index:9999;background:#16a34a;color:#fff;padding:12px 24px;border-radius:0 0 8px 8px;font-weight:600;text-decoration:none;transition:top .2s}.skip-link:focus{top:0}@keyframes pulse-ring{0%{transform:scale(.95);box-shadow:0 0 0 0 rgba(34,197,94,.7)}70%{transform:scale(1);box-shadow:0 0 0 12px rgba(34,197,94,0)}100%{transform:scale(.95)}}.pulse{animation:pulse-ring 2s infinite}</style>
 </head>

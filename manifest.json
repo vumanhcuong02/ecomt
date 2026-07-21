@@ -1,0 +1,22 @@
+{
+  "name": "ECO MT Ninh Hòa",
+  "short_name": "ECO MT",
+  "description": "Thuê xe tự lái, xe hợp đồng và xe dịch vụ tại Ninh Hòa, Khánh Hòa.",
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "assets/img/wikimedia-VinFast_Limo_Green_silver.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/wikimedia-VinFast_Limo_Green_silver.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
